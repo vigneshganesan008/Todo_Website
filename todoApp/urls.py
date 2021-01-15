@@ -17,6 +17,9 @@ from todoApp import views
 from django.urls import path
 
 urlpatterns = [
+    path('', views.home,name="home"),
     path('signup/', views.signupUser,name="signupUser"),
+    path('login/', views.loginUser,name="loginUser"),
+    path('logout/', views.logoutUser,name="logoutUser"),
     path('current/', views.currentTodos,name="currentTodos"),
 ]
