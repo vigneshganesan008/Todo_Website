@@ -5,7 +5,7 @@ Logged in as {{user.username}}
 <a href="{% url 'completedTodos'  %}">Completed</a>
 <a href="{% url 'currentTodos'  %}">current</a>
 <br>
-<form method = "POST" action = "{% url 'logoutUser' %}">
+<form method="POST" action="{% url 'logoutUser' %}">
     {% csrf_token %}
     <button type="submit">Logout</button>
 </form>
@@ -17,4 +17,4 @@ Logged in as {{user.username}}
 {% endif %}
 <br>
 <br>
-{% block content %}{% endblock %} 
+{% block content %}{% endblock %}
